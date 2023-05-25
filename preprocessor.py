@@ -1,16 +1,17 @@
 import pandas as pd
 
 def input_preprocessor(DC235, DC024, DC025, DC205, DC270a, DC237, DC214, DC142a, DC226) :
+    print(DC235)
     df = pd.DataFrame()
-    df['DC235'] = DC235
-    df['DC024'] = DC024
-    df['DC025'] = DC025
-    df['DC205'] = DC205
-    df['DC270a'] = DC270a
-    df['DC237'] = DC237
-    df['DC214'] = DC214
-    df['DC142a'] = DC142a
-    df['DC226'] = DC226
+    df['DC235'] = [DC235]
+    df['DC024'] = [DC024]
+    df['DC025'] = [DC025]
+    df['DC205'] = [DC205]
+    df['DC270a'] = [DC270a]
+    df['DC237'] = [DC237]
+    df['DC214'] = [DC214]
+    df['DC142a'] = [DC142a]
+    df['DC226'] = [DC226]
 
     df['DC235'] = df['DC235'].map({
         'Di Hunian Pribadi' : 1,
